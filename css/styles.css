@@ -34,7 +34,11 @@ body{
   font: 16px/var(--line) var(--font); letter-spacing: var(--letter);
   -webkit-text-size-adjust:100%;
 }
-.container{max-width:var(--maxw); margin:auto; padding:0 var(--page-pad)}
+.container{
+  max-width:var(--maxw);
+  margin:auto;
+  padding-inline:var(--page-pad)
+}
 a{color:var(--accent)}
 a:focus, button:focus, [role="switch"]:focus-visible{
   outline:3px solid var(--focus); outline-offset:3px; border-radius:8px
@@ -97,7 +101,9 @@ header{
 
 /* ====== Hero ====== */
 .hero{
-  padding:72px 0 44px; position:relative; overflow:hidden;
+  padding-block:clamp(24px, 2.2vw, 33px);
+  position:relative;
+  overflow:hidden;
 }
 .sparkles{
   position:absolute; inset:-10% -20% auto -20%;
@@ -107,7 +113,11 @@ header{
 }
 [data-reduced-motion="true"] .sparkles{display:none}
 
-.hero-intro{max-width:min(720px, 100%); margin:0 auto; padding:0 var(--page-pad)}
+.hero-intro{
+  max-width:min(720px, 100%);
+  margin:0;
+  padding:0;
+}
 
 h1{
   font-family: var(--heading); font-weight:900; font-size: clamp(2rem, 4vw, 3rem); margin:0 0 12px;
@@ -116,7 +126,10 @@ h1{
 .cta-row{display:flex; gap:12px; flex-wrap:wrap}
 
 /* ====== Sections ====== */
-section{padding:54px 0; border-top:1px solid color-mix(in oklab, var(--text) 8%, transparent)}
+section{
+  padding-block:clamp(24px, 2.2vw, 33px);
+  border-top:1px solid color-mix(in oklab, var(--text) 8%, transparent)
+}
 section h2{
   font-family:var(--heading); font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin:0 0 10px
 }
