@@ -561,15 +561,15 @@ button:focus-visible {
 }
 
 [data-text-size="base"] body {
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 [data-text-size="big"] body {
-  font-size: 1.2em;
+  font-size: 1.6em;
 }
 
 [data-text-size="huge"] body {
-  font-size: 1.25em;
+  font-size: 1.96em;
 }
 
 [data-reduce-motion="true"] *,
