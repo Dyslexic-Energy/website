@@ -1,0 +1,3 @@
+exclude:
+  - Specs
+  - AGENTS.md
