@@ -265,7 +265,7 @@ a:focus {
 }
 
 section {
-  padding-block: clamp(3rem, 10vw, 5rem);
+  padding-block: clamp(1.2rem, 4vw, 2.4rem);
 }
 
 h1, h2 {
@@ -532,6 +532,19 @@ button:focus-visible {
 .accessibility-menu {
   display: grid;
   gap: 1rem;
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  background: #ffffff;
+  z-index: 200;
+}
+
+.site-header__inner {
+  position: relative;
+}
+
+.accessibility-menu[hidden] {
+  display: none !important;
 }
 
 .accessibility-menu__intro {

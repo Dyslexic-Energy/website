@@ -47,3 +47,6 @@ Hero Header Stars
 	•	Placement:
 	•	Stars should be positioned around the edges of the hero header.
 	•	They must not overlap or obscure the hero text.
+
+
+Sections i.e `<section id="mission" class="mission" aria-labelledby="mission-title">..</section>` should have much less vertical padding.
