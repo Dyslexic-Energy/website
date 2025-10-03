@@ -7,3 +7,4 @@
 5. Refine global spacing, typography, and component tokens to maintain consistency across sections.
 6. Validate responsive layouts at mobile, tablet, desktop breakpoints, adjusting grids as needed.
 7. Update documentation (`AGENTS.md` or README) with any new utilities or architectural decisions introduced.
+8. Confirm accessibility menu styling plays nicely with footer layout and dark/high-contrast modes.

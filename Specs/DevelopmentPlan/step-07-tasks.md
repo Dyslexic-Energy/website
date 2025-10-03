@@ -8,3 +8,4 @@
 6. Validate performance with Lighthouse (mobile & desktop) and tune until budgets are met.
 7. Prepare deployment checklist (build command, environment variables) and execute deployment to chosen host.
 8. Record final status, outstanding issues, and post-launch monitoring plan in project tracker.
+9. Capture final hero screenshots showing updated star design in all themes for archive.

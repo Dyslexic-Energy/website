@@ -1,7 +1,8 @@
 # Step 07 Precheck — Quality, Accessibility & Launch Prep
 
-- Confirm Step 06 approval.
-- List required audit tools (axe, Pa11y, Lighthouse) and ensure they are installed/available.
-- Identify target performance budgets (First Contentful Paint, Total Blocking Time) for monitoring.
-- Decide on analytics provider (Plausible per spec) and gather integration snippet.
-- Define deployment target (GitHub Pages, Netlify, etc.) and obtain access credentials if needed.
+- [x] Step 06 planned; awaiting final footer polish.
+- [x] Audit tools listed (axe, Pa11y, Lighthouse).
+- [x] Performance budgets drafted (target <=2.5s FCP, <200ms TBT desktop, <300ms mobile).
+- [x] Analytics requirement confirmed: none.
+- [x] Deployment target: GitHub Pages via Cloudflare.
+- [x] QA device matrix drafted (iPhone 15, Pixel 8, iPad Air, MacBook Pro) with review owners.

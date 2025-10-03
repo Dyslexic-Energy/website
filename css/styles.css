@@ -47,6 +47,9 @@ body {
   background-color: var(--bg);
   color: var(--text);
   -webkit-text-size-adjust: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -79,6 +82,14 @@ a:focus {
   width: min(100% - 2rem, var(--wrap-width));
   margin: 0 auto;
   padding: var(--wrap-pad) 0;
+}
+
+.wrap--tight {
+  padding-block: clamp(0.6rem, 2.5vw, 1rem);
+}
+
+.site-main {
+  flex: 1;
 }
 
 .site-header {
