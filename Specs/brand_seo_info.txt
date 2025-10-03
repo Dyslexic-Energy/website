@@ -1,0 +1,80 @@
+Brand & Identity
+	•	Brand name: DyslexicEnergy
+	•	Tagline: Different Brains Are Amazing!
+	•	Mission statement: DyslexicEnergy celebrates dyslexia as a different way of thinking. A portion of profits supports UK dyslexia charities, keeping the message positive, practical, and proud.
+	•	Logo file: Not yet finalised, but should be available as an SVG and PNG (placeholder: /assets/logo.svg).
+	•	Open graph image: Use the rainbow gradient + sparkles hero image (needs exporting). Suggested: 1200×630 px JPG or PNG.
+
+⸻
+
+Audience & SEO Targeting
+	•	Primary audience: Adults with dyslexia, parents/caregivers, teachers, and allies who want to support a positive message.
+	•	Primary keywords:
+	1.	dyslexia positive clothing
+	2.	dyslexia awareness
+	•	Secondary keywords: dyslexia support UK, dyslexia charity merchandise, celebrating dyslexia.
+	•	Long-tail phrases (later): fun dyslexia t-shirts, buy dyslexia clothing UK, dyslexia gifts.
+
+⸻
+
+Metadata Inputs
+	•	Title tag: DyslexicEnergy — Dyslexia Positive Clothing & Awareness
+	•	Meta description: DyslexicEnergy celebrates different brains with uplifting clothing and designs. Profits support UK dyslexia charities.
+	•	Canonical URL: https://www.dyslexicenergy.com/
+	•	Indexing: Yes (index, follow) — unless holding page should stay private.
+	•	Theme colour: #222222 (dark neutral, matches branding).
+	•	Language code: en-GB.
+
+⸻
+
+Social Media & Sharing
+	•	Social profiles:
+	•	BlueSky: (to be added)
+	•	Instagram: https://www.instagram.com/dyslexicenergy/
+	•	Mastodon: (to be added)
+	•	LinkedIn: (optional for later, not core at launch).
+	•	og:title: DyslexicEnergy — Celebrating Different Brains
+	•	og:description: We celebrate dyslexia as a different way of thinking. Profits support UK dyslexia charities.
+	•	Twitter/X card: Optional. No handle planned (brand is not on X/Twitter).
+
+⸻
+
+Structured Data (Schema.org)
+	•	ContactPoint: mailto:hello@dyslexicenergy.com (public safe email). No phone.
+	•	SearchAction schema: Reserve for later.
+	•	sameAs URLs: Social profiles as above once created.
+	•	Languages available: English only.
+
+⸻
+
+Visible HTML Content
+	•	H1 text: DyslexicEnergy — Celebrating Different Brains
+	•	Intro paragraph: We celebrate dyslexia as a different way of thinking. Our clothing spreads positivity and supports UK dyslexia charities.
+	•	Call-to-action: Stay in touch — sign up to hear when we launch!
+	•	Form handler: Mailchimp (simplest integration, hidden JavaScript optional).
+	•	Footer links: Privacy Policy and Accessibility Statement (URLs to be added when ready).
+	•	Copyright: © DyslexicEnergy 2025 (auto-update year).
+	•	Navigation: Keep simple: logo + social links.
+
+⸻
+
+Assets & Design
+	•	Favicon: Needed (use logo).
+	•	Apple touch icon: Needed (SVG or PNG, 180×180 px).
+	•	Background/hero image: Rainbow gradient with sparkles (your design spec).
+	•	Alt text: "DyslexicEnergy logo — celebrating different brains"; hero image alt could be "Rainbow gradient with sparkles representing different brains."
+
+⸻
+
+Validation & Deployment
+	•	Hosting: GitHub Pages (current).
+	•	robots.txt + sitemap.xml: Yes, from day one.
+	•	Rich Results Test/Lighthouse audit: Richard to run before publishing.
+	•	Sitemap update: On each deploy (automated preferred).
+
+⸻
+
+Maintenance & Expansion
+	•	Future pages: Blog posts, FAQs, Events possible — plan for FAQPage and Event schema later.
+	•	Breadcrumb schema: Add once navigation expands.
+	•	Long-term SEO/brand goal: Build awareness, grow community sign-ups, and drive clothing sales that fund dyslexia charities.
