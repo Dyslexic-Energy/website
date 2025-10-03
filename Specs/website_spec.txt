@@ -1,0 +1,156 @@
+Dyslexic Energy Holding Page – Design & Development Specification
+
+1. Purpose
+
+The holding page should:
+	•	Introduce Dyslexic Energy as a brand.
+	•	Showcase the core brand identity (rainbow gradient, bold text, stars, inclusive message).
+	•	Provide a mission statement and a short educational section (“Dyslexia in Plain English”).
+	•	Include a sign-up form (one below the hero, one in the footer).
+	•	Ensure accessibility is central, with a dedicated accessibility menu (top-right).
+
+⸻
+
+2. Page Layout & Structure
+	•	Header
+	•	Logo/wordmark on the left.
+	•	Accessibility menu in the top-right.
+	•	Main
+	1.	Hero section: Gradient background, four stars, central text (title + subtitle).
+	2.	Primary sign-up form: Directly below the hero.
+	3.	Our Mission section.
+	4.	Dyslexia in Plain English explainer.
+	•	Footer
+	•	Full-bleed dark background with light text.
+	•	Secondary sign-up form.
+	•	Legal links and copyright.
+
+⸻
+
+3. Branding & Visual Design
+
+Hero Section
+	•	Background gradient (diagonal, top-left → bottom-right):
+	•	Dark reddish-maroon → orange → golden yellow → green → teal → turquoise → magenta-red.
+	•	Soft, glowing transitions with subtle grain overlay.
+	•	Stars:
+	•	Four white, glowing, four-point sparkles.
+	•	Slightly varied in size/position for a natural look.
+	•	Positioned top-left, top-right, bottom-left, bottom-right.
+	•	Decorative only (aria-hidden="true").
+	•	Text (centre-aligned):
+	•	Font: Bold geometric sans-serif (Helvetica Bold or similar).
+	•	All uppercase, off-white/cream colour.
+	•	Title:
+	•	Line 1: DYSLEXIC
+	•	Line 2: ENERGY.COM
+	•	Very large (~80% width).
+	•	Subtitle:
+	•	Line 3: Celebrating
+	•	Line 4: Different Brains
+	•	40% smaller than title.
+
+⸻
+
+4. Accessibility Features (Top-Right Menu)
+	•	Trigger button: “Accessibility” (text + icon).
+	•	Menu (drop-down, fully keyboard and ARIA compliant) with options:
+	•	Dark Mode (On/Off).
+	•	Text Size (Base / Big / Extra-Big).
+	•	Dyslexia-friendly font (On/Off, loads Atkinson Hyperlegible or similar).
+	•	High Contrast (On/Off).
+	•	Reduce Motion (On/Off).
+	•	Behaviour:
+	•	Arrow key navigation, Esc closes, focus returns to trigger.
+	•	Settings stored in localStorage and persist across visits.
+	•	Defaults respect system settings (prefers-color-scheme, prefers-reduced-motion).
+
+⸻
+
+5. Content Sections
+
+Stay in Touch (Forms)
+	•	Primary form:
+	•	Placed directly below the hero.
+	•	h2 Stay in Touch.
+	•	Email input + Sign Up button.
+	•	Validation, inline messages, ARIA live regions.
+	•	Privacy microcopy with link.
+	•	Secondary form (Footer):
+	•	Identical structure but unique IDs.
+	•	Shares endpoint and validation.
+
+Mission
+	•	Heading: Our Mission
+	•	Copy:
+We celebrate dyslexia as a different way of thinking. A portion of profits is donated to UK dyslexia charities. We collaborate with designers and educators to keep the message positive, practical, and proud.
+
+Dyslexia in Plain English
+	•	Heading: Dyslexia in Plain English
+	•	Copy:
+Dyslexia affects reading, writing, and memory — but also brings strengths in creativity, problem-solving, and big-picture thinking. Different doesn’t mean less. Different means powerfully different.
+
+⸻
+
+6. Footer (Full-Bleed Dark)
+	•	Visuals:
+	•	Dark background (#0F0F12) with light text (#F3F3F3).
+	•	Always extends to bottom of viewport.
+	•	Contents:
+	•	Secondary sign-up form.
+	•	Legal links: Privacy Policy, Accessibility Statement.
+	•	Copyright: © Dyslexic Energy 2025.
+
+⸻
+
+7. Accessibility & Compliance
+	•	Colour & contrast: All text meets WCAG 2.2 AA.
+	•	Text scaling: Layout holds at 200% zoom and with “Extra-Big” text mode.
+	•	Keyboard: All interactions are fully operable with keyboard.
+	•	Semantics:
+	•	Correct heading structure.
+	•	Landmarks (header, main, footer).
+	•	Forms labelled explicitly.
+	•	Motion: Animations disabled in Reduce Motion mode.
+	•	Skip Link: First focusable element “Skip to content”.
+
+⸻
+
+8. Responsive Design
+	•	Mobile (≤600px):
+	•	Hero text scales, stars remain in corners.
+	•	Forms are single-column.
+	•	Tablet (600–1024px):
+	•	Mission and explainer may display side by side.
+	•	Desktop (≥1024px):
+	•	Full hero banner fills viewport.
+	•	Forms wide, centred.
+
+⸻
+
+9. Technical Notes
+	•	Stack: HTML5, CSS (utility framework optional), minimal JS.
+	•	Performance:
+	•	Use CSS/SVG for gradient and stars.
+	•	Lazy-load non-critical assets.
+	•	Hosting: Static hosting (Netlify, Vercel, GitHub Pages).
+	•	Analytics: Privacy-respecting (e.g., Plausible).
+
+⸻
+
+10. Deliverables
+	•	Wireframe (created, see attached reference).
+	•	Mockups: Desktop, tablet, mobile.
+	•	Final code: HTML/CSS/JS.
+	•	Accessibility audit: Manual + automated tests (axe, Pa11y).
+
+⸻
+
+11. Wireframe Reference
+
+The wireframe shows:
+	•	Hero (title + subtitle, stars, gradient background).
+	•	Primary sign-up form directly beneath hero.
+	•	Mission and Plain English sections stacked.
+	•	Footer (full-bleed dark, secondary form, legal links).
+	•	Accessibility controls added in top-right of header (not visible in original wireframe but now specified).
