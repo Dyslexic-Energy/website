@@ -12,7 +12,12 @@ Before changing markup or behaviour, review `Specs/website_spec.txt` and treat i
 - `npx html-validate index.html` — Structural lint to catch missing landmarks and duplicate IDs.
 
 ## Coding Style & Naming Conventions
-Use two-space indentation in HTML and JavaScript, and keep CSS declarations compact (`selector{property:value;}`) to match `styles.css`. Class names stay lowercase with hyphen separators and should describe the component role (`.donation`, `.cards`). Prefer CSS custom properties for colour, spacing, and radius so new sections inherit the design tokens. Wrap JavaScript in IIFEs, guard every DOM query, and bail early (`if(!node){ return; }`) when a component is absent.
+Use two-space indentation in HTML and JavaScript, and keep CSS declarations compact (`selector{property:value;}`) to match `styles.css`. Class names stay lowercase with hyphen separators and should describe the component role (`.donation`, `.cards`). Prefer CSS custom properties for colour, spacing, and radius so new sections inherit the design tokens. Wrap JavaScript in IIFEs, guard every DOM query, and bail early (`if(!node){ return; }`) when a component is absent. Annotate markup with Schema.org item types whenever relevant—e.g., use `WebSite`, `Organization`, `ContactPoint`, `Offer`, or `Article` JSON-LD blocks (preferred) or microdata on structural elements.
+
+## Structured Data & Schema.org
+- Add a JSON-LD `<script type="application/ld+json">` describing the site as a `WebSite` with an `Organization` and newsletter `ContactPoint` on every page.
+- When introducing new sections, extend the JSON-LD graph with specific types (e.g., `FAQPage`, `Event`, `Product`, `Offer`, `BlogPosting`). Provide canonical `@id` references so crawlers can connect nodes.
+- For on-page elements that benefit from rich results (e.g., sign-up form, hero promotion), mirror the structured data with matching `itemprop` attributes or clearly named classes and ensure the visible content matches the schema.
 
 ## Testing Guidelines
 - Preview in a Chromium-based browser and Safari before pushing.
