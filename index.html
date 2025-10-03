@@ -3,220 +3,265 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dyslexic Energy — dyslexicenergy.com</title>
-  <meta name="description" content="Dyslexic Energy is a dyslexia-positive brand. We celebrate different brains with uplifting designs. A portion of profits supports UK dyslexia charities.">
-  <meta name="theme-color" content="#222222">
-  <link rel="canonical" href="https://dyslexicenergy.com">
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Dyslexic Energy — dyslexicenergy.com">
-  <meta property="og:description" content="Dyslexia-positive clothing and projects. A portion of profits supports UK dyslexia charities.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dyslexicenergy.com">
+  <title>Dyslexic Energy — Holding Page</title>
+  <meta name="description" content="Dyslexic Energy celebrates different brains with accessible, inclusive design.">
+  <link rel="canonical" href="https://dyslexicenergy.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body data-contrast="normal" data-reduced-motion="false">
+<body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header role="banner">
-    <div class="container nav" aria-label="Primary">
-      <a href="#top" class="brand">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="wordmark" aria-label="Dyslexic Energy">Dyslexic Energy</span>
-      </a>
+  <header class="site-header" id="top" role="banner">
+    <div class="wrap site-header__inner">
+      <a class="brand__wordmark" href="/" aria-label="Dyslexic Energy">Dyslexic Energy</a>
+      <button id="accessibilityButton"
+              class="accessibility-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="accessibilityMenu">
+        Accessibility
+      </button>
+      <div id="accessibilityMenu"
+           class="accessibility-menu"
+           data-dropdown
+           role="menu"
+           aria-labelledby="accessibilityButton"
+           hidden>
+        <p class="accessibility-menu__intro">Tune Dyslexic Energy to suit your eyes.</p>
 
-      <nav class="links" aria-label="Site">
-        <a href="#mission">Our mission</a>
-        <a href="#shop">Shop</a>
-        <a href="#learn">Learn</a>
-        <a href="#support">Support</a>
-        <div class="dropdown" data-dropdown="accessibility" data-open="false">
-          <button class="btn secondary" id="accessibilityButton" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="accessibilityMenu">
-            Accessibility
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Appearance</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="themeDark"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dark Mode</span>
+            <span class="accessibility-item__hint">dim the background</span>
           </button>
-          <div class="dropdown-panel" id="accessibilityMenu" aria-labelledby="accessibilityMenuTitle" hidden>
-            <p class="dropdown-title" id="accessibilityMenuTitle">Accessibility controls</p>
-            <div class="toggles" role="group" aria-label="Accessibility settings">
-              <label class="toggle">
-                <input type="checkbox" id="fontToggle" aria-label="Use dyslexia-friendly font (OpenDyslexic)" />
-                <span>OpenDyslexic</span>
-              </label>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="contrastHigh"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">High Contrast</span>
+            <span class="accessibility-item__hint">boost clarity</span>
+          </button>
+        </div>
 
-              <label class="toggle">
-                <input type="checkbox" id="contrastToggle" aria-label="High contrast mode" />
-                <span>High contrast</span>
-              </label>
-
-              <label class="toggle">
-                <input type="checkbox" id="motionToggle" aria-label="Reduce motion" />
-                <span>Reduce motion</span>
-              </label>
-
-              <label class="toggle">
-                <input type="checkbox" id="fontSizeToggle" aria-label="Larger text" />
-                <span>Bigger text</span>
-              </label>
-            </div>
-            <p class="dropdown-note">Your settings are saved in this browser.</p>
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Text size</p>
+          <div class="accessibility-radio-group" role="group" aria-label="Text size options">
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="base"
+                    role="menuitemradio"
+                    aria-checked="true">
+              Base
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="big"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Big
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="extra"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Extra-Big
+            </button>
           </div>
         </div>
-        <a href="#contact" class="btn secondary">Contact</a>
-      </nav>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Reading comfort</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="fontDyslexic"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dyslexia-friendly font</span>
+            <span class="accessibility-item__hint">Open Dyslexic</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="reduceMotion"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Reduce Motion</span>
+            <span class="accessibility-item__hint">less animation</span>
+          </button>
+        </div>
+
+        <div class="accessibility-menu__footer" role="none">
+          <button type="button" class="accessibility-reset" data-reset>
+            Reset Preferences
+          </button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main id="main" tabindex="-1">
-    <!-- HERO -->
-    <section class="hero container" id="top" aria-labelledby="h1">
-      <div class="sparkles" aria-hidden="true"></div>
-      <div class="hero-intro">
-        <h1 id="h1">
-          Celebrating <span class="pill">different brains</span> with bold, positive design
+  <main id="main" class="site-main" role="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero__stars" aria-hidden="true">
+        <svg class="hero__star hero__star--center" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 0 L62 48 L100 70 L62 92 L50 140 L38 92 L0 70 L38 48 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--north" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--north-east" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--east" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--south-east" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--south" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--south-west" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--west" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--north-west" viewBox="0 0 100 140" focusable="false" role="presentation">
+          <path d="M50 6 L60 46 L92 70 L60 94 L50 134 L40 94 L8 70 L40 46 Z"></path>
+        </svg>
+      </div>
+      <div class="wrap hero__content">
+        <h1 id="hero-title" class="hero__title">
+          <span>Dyslexic</span>
+          <span>Energy.com</span>
         </h1>
-        <p class="tagline">
-          Dyslexic Energy is a dyslexia-positive brand. We make uplifting clothing and resources that
-          say: <em>we think differently — and that’s powerful</em>.
+        <p class="hero__subtitle">
+          <span>Celebrating</span>
+          <span>Different Brains</span>
         </p>
-        <div class="cta-row" role="group" aria-label="Primary actions">
-          <a href="#shop" class="btn" aria-describedby="shopdesc">Shop T-shirts</a>
-          <a href="#newsletter" class="btn secondary">Join the newsletter</a>
-          <a href="#learn" class="btn secondary">What is dyslexia?</a>
-        </div>
-        <p id="shopdesc" class="sr-only">Browse our latest designs and pre-orders.</p>
-      </div>
-    </section>
-
-    <!-- MISSION -->
-    <section id="mission" class="container" aria-labelledby="mission-title">
-      <h2 id="mission-title">Our mission</h2>
-      <p class="lead">
-        We celebrate dyslexia as a different way of thinking. A portion of profits is donated to UK dyslexia charities. We collaborate with designers and educators to keep the message positive, practical, and proud.
-      </p>
-
-      <div class="cards" role="list">
-        <article class="card" role="listitem">
-          <h3>Celebrate</h3>
-          <p>Bright, joyful designs that turn “struggle” into “strength”.</p>
-        </article>
-
-        <article class="card" role="listitem">
-          <h3>Educate</h3>
-          <p>Plain-English guides and classroom posters that build understanding.</p>
-        </article>
-
-        <article class="card" role="listitem">
-          <h3>Donate</h3>
-          <p>We commit a portion of profits to dyslexia charities in the UK.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SHOP -->
-    <section id="shop" class="container" aria-labelledby="shop-title">
-      <h2 id="shop-title">Shop (coming soon)</h2>
-      <p class="lead">Pre-orders open shortly. Here’s a peek at our first wave:</p>
-
-      <div class="cards" role="list" aria-label="Product teasers">
-        <article class="card" role="listitem">
-          <h3>“Different ≠ Less” Tee</h3>
-          <p>Soft cotton, pastel rainbow wordmark. Unisex fit.</p>
-        </article>
-        <article class="card" role="listitem">
-          <h3>“Brain Sparks” Tee</h3>
-          <p>Clean white with sparkles motif. Sizes 6–XXL.</p>
-        </article>
-        <article class="card" role="listitem">
-          <h3>Sticker Pack</h3>
-          <p>Classroom-friendly designs to spread the message.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- LEARN -->
-    <section id="learn" class="container" aria-labelledby="learn-title">
-      <h2 id="learn-title">Dyslexia in Plain English</h2>
-      <p class="lead">
-        Dyslexia affects reading, writing, and memory — but also brings strengths in creativity, problem-solving, and big-picture thinking. Different doesn’t mean less. Different means <em>powerfully different</em>.
-      </p>
-
-      <div class="cards">
-        <article class="card">
-          <h3>What helps</h3>
-          <p>Plain language, more time, coloured overlays, audio support, and chunked information.</p>
-        </article>
-        <article class="card">
-          <h3>Words matter</h3>
-          <p>We avoid deficit-first language. We talk about strengths and strategies.</p>
-        </article>
-        <article class="card">
-          <h3>Resources</h3>
-          <p>We’ll publish printable posters and checklists for families and schools.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SUPPORT / DONATION -->
-    <section id="support" class="container" aria-labelledby="support-title">
-      <h2 id="support-title">Support the movement</h2>
-      <div class="donation" role="group" aria-label="Support options">
-        <p style="margin:0">
-          Prefer to help before the shop launches? <strong>Join the newsletter</strong> or
-          <strong>email us</strong> about volunteering, collaborations, or wholesale for schools.
-        </p>
-        <p style="margin:0">
-          We’ll publish our first donation statement after launch.
+        <p class="hero__summary">
+          Inclusive merch, bright ideas, and positive thinking coming soon <a class="hero__cta" href="#stay-in-touch">Sign up for launch updates</a> and accessibility-first resources.
         </p>
       </div>
-      <div class="cta-row" style="margin-top:16px">
-        <a href="#newsletter" class="btn">Join newsletter</a>
-        <a href="#contact" class="btn secondary">Email us</a>
+    </section>
+
+    
+<section id="stay-in-touch" class="stay-in-touch" aria-labelledby="stay-title">
+  <div class="wrap wrap--tight">
+    <h2 id="stay-title">Stay in Touch</h2>
+    <div id="mc_embed_shell">
+      <div id="mc_embed_signup">
+        <form action="https://formspree.io/f/movkwbrd"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="signup-form"
+              target="_self"
+              novalidate>
+          <div class="field">
+            <label for="mce-EMAIL">Email Address</label>
+            <input type="email"
+                   name="EMAIL"
+                   class="required email"
+                   id="mce-EMAIL"
+                   required
+                   autocomplete="email"
+                   inputmode="email"
+                   placeholder="you@example.com"
+                   aria-describedby="signup-primary-status">
+          </div>
+
+          <div class="signup-hidden" aria-hidden="true">
+            <label for="signup-honeypot">Leave this field empty</label>
+            <input type="text"
+                   id="signup-honeypot"
+                   name="signup-honeypot"
+                   tabindex="-1"
+                   value="">
+          </div>
+
+          <button type="submit">Subscribe</button>
+          <p class="form-note">
+            We respect your privacy. Read our <a href="/privacy/">Privacy Statement</a> to learn how we handle your email.
+          </p>
+          <p class="form-status" id="signup-primary-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
       </div>
     </section>
 
-    <!-- NEWSLETTER (no external service yet; mailto fallback) -->
-    <section id="newsletter" class="container" aria-labelledby="newsletter-title">
-      <h2 id="newsletter-title">Newsletter</h2>
-      <p class="lead">Get updates when new designs drop and when pre-orders open.</p>
-
-      <form action="mailto:hello@dyslexicenergy.com" method="post" enctype="text/plain" aria-describedby="newsletter-note">
-        <label for="email">Your email address</label><br>
-        <input id="email" name="Email" type="email" required
-               style="margin:.4rem 0 1rem; padding:.7rem .9rem; border-radius:10px; border:1px solid #ccc; width:min(520px, 100%);"/>
-        <div class="cta-row">
-          <button class="btn" type="submit">Subscribe</button>
-          <a class="btn secondary" href="mailto:hello@dyslexicenergy.com?subject=Newsletter%20subscribe&body=Please%20add%20me%20to%20the%20mailing%20list.">Subscribe via email app</a>
-        </div>
-        <p id="newsletter-note" class="fine" style="margin-top:.6rem">
-          We’ll only email about Dyslexic Energy. You can unsubscribe any time.
+    <section id="mission" class="mission" aria-labelledby="mission-title">
+      <div class="wrap wrap--tight">
+        <h2 id="mission-title">Our Mission</h2>
+        <p class="mission__tagline">Different Brains Are Amazing!</p>
+        <p>
+          We celebrate dyslexia as a brilliant way of thinking. Part of every profit goes to UK dyslexia charities.
+          We team up with designers and educators to spread a message that’s positive, practical, and proud.
         </p>
-      </form>
+      </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="container" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
-      <p class="lead">Questions, school packs, or collaborations? We’d love to hear from you.</p>
-      <p>
-        Email: <a href="mailto:hello@dyslexicenergy.com">hello@dyslexicenergy.com</a><br>
-        Press & wholesale: <a href="mailto:press@dyslexicenergy.com">press@dyslexicenergy.com</a>
-      </p>
+    <section id="plain-english" class="plain-english" aria-labelledby="plain-english-title">
+      <div class="wrap wrap--tight">
+        <h2 id="plain-english-title">Dyslexia in Plain English</h2>
+        <p>
+          Dyslexia affects reading, writing, and memory — but also brings strengths in creativity, problem-solving, and big-picture thinking.
+          Different doesn’t mean less. Different means powerfully different.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer class="container" role="contentinfo">
-    <div class="footer-grid">
-      <div>
-        <div class="wordmark" aria-hidden="true" style="display:inline-block">Dyslexic Energy</div>
-        <div class="fine">© <span id="year"></span> dyslexicenergy.com. Celebrating different brains.</div>
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer-wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h2 class="footer-about__title">Dyslexic Energy</h2>
+          <p>Celebrating different brains with inclusive ideas and merch. Stay tuned — big things are brewing.</p>
+        </div>
+        <nav class="legal-links" aria-label="Legal">
+          <ul>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/accessibility/">Accessibility Statement</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="fine">
-        Designed in Midsomer Norton, UK • A portion of profits supports dyslexia charities.
+      <div class="footer-meta">
+        <p class="footer-love"><span>♥</span> Made with love in Midsomer Norton.</p>
+        <p class="no-cookies">We use no cookies — just good energy.</p>
+        <p class="copyright">
+          © <span id="currentYear">2025</span> Dyslexic Energy. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
 
-  <script src="./scripts/accessibility-dropdown.js"></script>
-  <script src="./scripts/accessibility-toggles.js"></script>
-  <script src="./scripts/year.js"></script>
+  <script src="./scripts/year.js" defer></script>
+  <script src="./scripts/accessibility-menu.js" defer></script>
+  <script src="./scripts/forms.js" defer></script>
 </body>
 </html>

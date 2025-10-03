@@ -1,6 +1,9 @@
-(() => {
-  const yearEl = document.getElementById('year');
-  if(yearEl){
-    yearEl.textContent = new Date().getFullYear();
+'use strict';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const yearTarget = document.getElementById('currentYear');
+  if(!yearTarget){
+    return;
   }
-})();
+  yearTarget.textContent = String(new Date().getFullYear());
+});

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility Statement — Dyslexic Energy</title>
+  <meta name="description" content="Accessibility commitments for Dyslexic Energy.">
+  <link rel="canonical" href="https://dyslexicenergy.com/accessibility/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap site-header__inner">
+      <a class="brand__wordmark" href="/" aria-label="Dyslexic Energy">Dyslexic Energy</a>
+      <button id="accessibilityButton"
+              class="accessibility-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="accessibilityMenu">
+        Accessibility
+      </button>
+      <div id="accessibilityMenu"
+           class="accessibility-menu"
+           data-dropdown
+           role="menu"
+           aria-labelledby="accessibilityButton"
+           hidden>
+        <p class="accessibility-menu__intro">Tune Dyslexic Energy to suit your eyes.</p>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Appearance</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="themeDark"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dark Mode</span>
+            <span class="accessibility-item__hint">dim the background</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="contrastHigh"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">High Contrast</span>
+            <span class="accessibility-item__hint">boost clarity</span>
+          </button>
+        </div>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Text size</p>
+          <div class="accessibility-radio-group" role="group" aria-label="Text size options">
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="base"
+                    role="menuitemradio"
+                    aria-checked="true">
+              Base
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="big"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Big
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="extra"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Extra-Big
+            </button>
+          </div>
+        </div>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Reading comfort</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="fontDyslexic"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dyslexia-friendly font</span>
+            <span class="accessibility-item__hint">Open Dyslexic</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="reduceMotion"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Reduce Motion</span>
+            <span class="accessibility-item__hint">less animation</span>
+          </button>
+        </div>
+
+        <div class="accessibility-menu__footer" role="none">
+          <button type="button" class="accessibility-reset" data-reset>
+            Reset Preferences
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <article class="policy" aria-labelledby="accessibility-title">
+      <div class="wrap">
+        <h1 id="accessibility-title">Accessibility Statement</h1>
+        <p>
+          DyslexicEnergy.com is committed to making our website accessible to everyone. We follow our obligations under the Disability Discrimination Act and aim to ensure that people with visual, hearing, motor, or cognitive impairments can use our site.
+        </p>
+        <p>
+          Accessibility is a shared responsibility between us as site creators and the technologies people use, such as browsers, operating systems, and assistive tools like screen readers, text-to-speech, or larger fonts.
+        </p>
+        <p>To support this, DyslexicEnergy.com will:</p>
+        <ul>
+          <li>Ensure our content works well with assistive technologies.</li>
+          <li>Continue to improve our site based on accessibility standards and community feedback.</li>
+          <li>Work with the wider accessibility community to support the development of future tools and standards.</li>
+        </ul>
+        <p>
+          If you encounter any issues, contact <a href="mailto:access@dyslexicenergy.com">access@dyslexicenergy.com</a> so we can help.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer-wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h2 class="footer-about__title">Need a hand?</h2>
+          <p>Email <a href="mailto:hello@dyslexicenergy.com">hello@dyslexicenergy.com</a> and we’ll get back quickly.</p>
+        </div>
+        <nav class="legal-links" aria-label="Legal">
+          <ul>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/accessibility/" aria-current="page">Accessibility Statement</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-love"><span>♥</span> Made with love in Midsomer Norton.</p>
+        <p class="no-cookies">We use no cookies — just good energy.</p>
+        <p class="copyright">© <span id="currentYear">2025</span> Dyslexic Energy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts/year.js" defer></script>
+  <script src="/scripts/accessibility-menu.js" defer></script>
+</body>
+</html>
