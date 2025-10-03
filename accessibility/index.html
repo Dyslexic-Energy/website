@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility Statement — Dyslexic Energy</title>
+  <meta name="description" content="Accessibility commitments for Dyslexic Energy.">
+  <link rel="canonical" href="https://dyslexicenergy.com/accessibility/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap site-header__inner">
+      <a class="brand__wordmark" href="/" aria-label="Dyslexic Energy">Dyslexic Energy</a>
+      <button id="accessibilityButton"
+              class="accessibility-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="accessibilityMenu">
+        Accessibility
+      </button>
+      <div id="accessibilityMenu"
+           class="accessibility-menu"
+           data-dropdown
+           hidden>
+        <p>Accessibility controls will appear here in Step 05.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <article class="policy" aria-labelledby="accessibility-title">
+      <div class="wrap">
+        <h1 id="accessibility-title">Accessibility Statement</h1>
+        <p>
+          DyslexicEnergy.com is committed to making our website accessible to everyone. We follow our obligations under the Disability Discrimination Act and aim to ensure that people with visual, hearing, motor, or cognitive impairments can use our site.
+        </p>
+        <p>
+          Accessibility is a shared responsibility between us as site creators and the technologies people use, such as browsers, operating systems, and assistive tools like screen readers, text-to-speech, or larger fonts.
+        </p>
+        <p>To support this, DyslexicEnergy.com will:</p>
+        <ul>
+          <li>Ensure our content works well with assistive technologies.</li>
+          <li>Continue to improve our site based on accessibility standards and community feedback.</li>
+          <li>Work with the wider accessibility community to support the development of future tools and standards.</li>
+        </ul>
+        <p>
+          If you encounter any issues, contact <a href="mailto:access@dyslexicenergy.com">access@dyslexicenergy.com</a> so we can help.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <nav class="legal-links" aria-label="Legal">
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/accessibility/" aria-current="page">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+      <p class="no-cookies">We use no cookies — just good energy.</p>
+      <p class="copyright">© <span id="currentYear">2025</span> Dyslexic Energy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/scripts/year.js" defer></script>
+  <script src="/scripts/accessibility-menu.js" defer></script>
+</body>
+</html>

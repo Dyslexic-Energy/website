@@ -1,7 +1,9 @@
 # Step 04 Precheck — Content & Forms
 
-- Confirm Step 03 review sign-off.
-- Ensure copy for Mission and Plain English sections is final or identify owner for last edits.
-- Decide on form submission handling (static service, API endpoint); capture pending answer in clarifying questions if unknown.
-- Select validation strategy (native HTML5, custom JS) and ensure dependencies are acceptable for static hosting.
-- Prepare privacy microcopy and link target to be used in forms.
+- [x] Step 03 approved; hero/branding work merged on branch `draft2`.
+- [x] Final Mission and Plain English copy confirmed (spec text locked).
+- [x] Mailchimp selected as endpoint; awaiting embed details from `Specs/MailChimpScript.js`.
+- [x] Validation approach chosen: native HTML5 with custom enhancements for friendly whimsical messaging.
+- [x] Privacy microcopy & statement links live at `/privacy/`; accessibility page at `/accessibility/`.
+- [x] Tone guidance captured (friendly and whimsical) for success/error states.
+- [ ] Confirm Mailchimp form action URL/list ID before wiring submission.

@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dyslexic Energy — Holding Page</title>
   <meta name="description" content="Dyslexic Energy celebrates different brains with accessible, inclusive design.">
-  <link rel="canonical" href="https://dyslexicenergy.com">
+  <link rel="canonical" href="https://dyslexicenergy.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" id="top" role="banner">
-    <div class="wrap">
-      <div class="brand">
-        <span class="brand__wordmark" aria-label="Dyslexic Energy">Dyslexic Energy</span>
-      </div>
+    <div class="wrap site-header__inner">
+      <a class="brand__wordmark" href="/" aria-label="Dyslexic Energy">Dyslexic Energy</a>
       <button id="accessibilityButton"
               class="accessibility-trigger"
               type="button"
@@ -35,17 +36,51 @@
 
   <main id="main" class="site-main" role="main">
     <section id="hero" class="hero" aria-labelledby="hero-title">
-      <div class="wrap">
-        <h1 id="hero-title">Dyslexic Energy</h1>
-        <p class="hero__subtitle">Celebrating Different Brains.</p>
-        <p class="hero__summary">Accessible holding page scaffolding. Branding, gradients, and decorative stars will be added in Step 03.</p>
+      <div class="hero__stars" aria-hidden="true">
+        <svg class="hero__star hero__star--big hero__star--tl" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--big hero__star--tr" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--big hero__star--bl" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--big hero__star--br" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--tm" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--rm" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--bm" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        </svg>
+        <svg class="hero__star hero__star--small hero__star--lm" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        </svg>
+      </div>
+      <div class="wrap hero__content">
+        <h1 id="hero-title" class="hero__title">
+          <span>Dyslexic</span>
+          <span>Energy.com</span>
+        </h1>
+        <p class="hero__subtitle">
+          <span>Celebrating</span>
+          <span>Different Brains</span>
+        </p>
+        <p class="hero__summary">
+          Inclusive merch, bright ideas, and positive thinking coming soon ❤️ <a class="hero__cta" href="#stay-in-touch">Sign up for launch updates</a> and accessibility-first resources.
+        </p>
       </div>
     </section>
 
     <section id="stay-in-touch" class="stay-in-touch" aria-labelledby="stay-title">
       <div class="wrap">
         <h2 id="stay-title">Stay in Touch</h2>
-        <form id="signup-primary" class="signup-form" method="post" action="#" novalidate>
+        <form id="signup-primary" class="signup-form" method="post" action="#" novalidate data-mailchimp="pending">
           <div class="field">
             <label for="signup-primary-email">Email address</label>
             <input type="email"
@@ -54,13 +89,14 @@
                    autocomplete="email"
                    required
                    inputmode="email"
-                   placeholder="you@example.com">
+                   placeholder="you@example.com"
+                   aria-describedby="signup-primary-status">
           </div>
           <button type="submit">Sign Up</button>
           <p class="form-note">
-            We respect your privacy. Read the full policy on our dedicated Privacy page.
+            We respect your privacy. Read our <a href="/privacy/">Privacy Statement</a> to learn how we handle your email.
           </p>
-          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-status" id="signup-primary-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
@@ -89,34 +125,14 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="wrap">
-      <section id="footer-cta" class="footer-cta" aria-labelledby="footer-title">
-        <h2 id="footer-title">Stay in Touch</h2>
-        <form id="signup-footer" class="signup-form" method="post" action="#" novalidate>
-          <div class="field">
-            <label for="signup-footer-email">Email address</label>
-            <input type="email"
-                   id="signup-footer-email"
-                   name="email"
-                   autocomplete="email"
-                   required
-                   inputmode="email"
-                   placeholder="you@example.com">
-          </div>
-          <button type="submit">Sign Up</button>
-          <p class="form-note">
-            Prefer to read details first? Visit our Accessibility and Privacy pages (coming soon).
-          </p>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </section>
-
       <nav class="legal-links" aria-label="Legal">
         <ul>
-          <li><a href="/privacy.html">Privacy Policy</a></li>
-          <li><a href="/accessibility.html">Accessibility Statement</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/accessibility/">Accessibility Statement</a></li>
         </ul>
       </nav>
 
+      <p class="no-cookies">We use no cookies — just good energy.</p>
       <p class="copyright">
         © <span id="currentYear">2025</span> Dyslexic Energy. All rights reserved.
       </p>
@@ -126,5 +142,6 @@
   <script src="./scripts/year.js" defer></script>
   <script src="./scripts/accessibility-menu.js" defer></script>
   <script src="./scripts/forms.js" defer></script>
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f8c2bc087d8a8d19cc91821bd/a6152b61e987b8b3b798ecbae.js");</script>
 </body>
 </html>
