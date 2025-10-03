@@ -195,7 +195,7 @@ a:focus {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  font-size: clamp(2.8rem, 8vw, 5.8rem);
+  font-size: clamp(3.1rem, 8.9vw, 6.3rem);
   margin: 0;
 }
 
@@ -206,7 +206,7 @@ a:focus {
 .hero__subtitle {
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  font-size: clamp(1rem, 3.4vw, 1.7rem);
+  font-size: clamp(1.12rem, 3.8vw, 1.9rem);
   color: var(--hero-outline);
   margin: 0;
 }
@@ -217,6 +217,7 @@ a:focus {
 
 .hero__summary {
   max-width: 48ch;
+  font-size: clamp(0.98rem, 2.2vw, 1.25rem);
   margin: 0;
   color: var(--hero-muted);
 }
@@ -252,33 +253,33 @@ a:focus {
 }
 
 .hero__star--center {
-  width: clamp(90px, 22vw, 160px);
-  height: clamp(140px, 32vw, 240px);
+  width: clamp(80px, 18vw, 150px);
+  height: clamp(150px, 34vw, 260px);
   left: 50%;
-  top: 52%;
+  top: 50%;
   transform: translate(-50%, -50%);
   animation-delay: 1.2s;
 }
 
 .hero__star--small {
-  width: clamp(46px, 10vw, 84px);
-  height: clamp(86px, 18vw, 160px);
-  opacity: 0.68;
+  width: clamp(40px, 9vw, 72px);
+  height: clamp(96px, 20vw, 180px);
+  opacity: 0.7;
 }
 
-.hero__star--north { top: 4%; left: 50%; transform: translate(-50%, 0); animation-delay: 0s; }
-.hero__star--north-east { top: 16%; right: 8%; animation-delay: 1.8s; }
-.hero__star--east { top: 48%; right: 4%; animation-delay: 3.4s; }
-.hero__star--south-east { bottom: 8%; right: 10%; animation-delay: 4.9s; }
-.hero__star--south { bottom: 4%; left: 50%; transform: translate(-50%, 0); animation-delay: 6.1s; }
-.hero__star--south-west { bottom: 12%; left: 12%; animation-delay: 7.2s; }
-.hero__star--west { top: 52%; left: 6%; animation-delay: 5.6s; }
-.hero__star--north-west { top: 18%; left: 14%; animation-delay: 2.6s; }
+.hero__star--north { top: 3%; left: 50%; transform: translate(-50%, 0); animation-delay: 0s; }
+.hero__star--north-east { top: 15%; right: 6%; animation-delay: 1.6s; }
+.hero__star--east { top: 50%; right: 3%; animation-delay: 3s; }
+.hero__star--south-east { bottom: 6%; right: 8%; animation-delay: 4.6s; }
+.hero__star--south { bottom: 2%; left: 50%; transform: translate(-50%, 0); animation-delay: 6s; }
+.hero__star--south-west { bottom: 10%; left: 10%; animation-delay: 7.4s; }
+.hero__star--west { top: 50%; left: 4%; animation-delay: 5.2s; }
+.hero__star--north-west { top: 16%; left: 12%; animation-delay: 2.4s; }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.5; transform: scale(0.8) rotate(0deg); }
-  40% { opacity: 1; transform: scale(1.1) rotate(5deg); }
-  60% { opacity: 0.88; transform: scale(0.98) rotate(-4deg); }
+  0%, 100% { opacity: 0.45; transform: scale(0.78) rotate(0deg); }
+  35% { opacity: 1; transform: scale(1.12) rotate(5deg); }
+  55% { opacity: 0.85; transform: scale(0.96) rotate(-4deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
