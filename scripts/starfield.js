@@ -5,7 +5,9 @@
   }
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const STAR_COUNT = prefersReducedMotion ? 14 : 32;
+  const MOBILE_BREAKPOINT = 640;
+  const viewportIsMobile = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches;
+  const STAR_COUNT = prefersReducedMotion ? 14 : viewportIsMobile ? 16 : 32;
   const MIN_SIZE = 18;
   const MAX_SIZE = 48;
   const MIN_DISTANCE = 30;
