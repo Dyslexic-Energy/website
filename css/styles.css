@@ -493,6 +493,8 @@ button:focus-visible {
     padding: 0;
     justify-content: center;
     border-radius: 12px;
+    border-width: 0;
+    background: transparent;
   }
 
   .accessibility-trigger__icon {
