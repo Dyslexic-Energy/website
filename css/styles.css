@@ -525,11 +525,11 @@ button:focus-visible {
 }
 
 [data-text-size="big"] body {
-  font-size: 18px;
+  font-size: 1.4em;
 }
 
-[data-text-size="extra"] body {
-  font-size: 20px;
+[data-text-size="huge"] body {
+  font-size: 1.95em;
 }
 
 [data-reduce-motion="true"] *,
