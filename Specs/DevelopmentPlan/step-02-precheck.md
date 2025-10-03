@@ -1,7 +1,7 @@
 # Step 02 Precheck — Semantic Layout Skeleton
 
-- Confirm Step 01 review is signed off.
-- Decide whether the layout work happens on a feature branch; if so, note branch name here.
-- Ensure a rollback plan exists (e.g., stash or branch) before editing `index.html` and `css/styles.css`.
-- Gather spacing, grid, and breakpoint notes from the spec and designs for ready reference.
-- Prepare placeholder copy for forms and sections so focus can stay on structure first.
+- [x] Step 01 review signed off by Richard S (2025-10-03).
+- [x] Work will continue on existing branch `draft2`; rollback via `git switch -c step02-backup` if needed.
+- [x] Rollback plan noted: create temporary branch before major edits if required.
+- [x] Spacing/grid notes captured from Sections 2, 3, 8 of spec and wireframe references.
+- [x] Placeholder copy prepared using spec-provided Mission, Plain English, and form strings.
