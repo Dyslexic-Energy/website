@@ -53,25 +53,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const actionUrl = form.getAttribute('action') || '';
       const method = (form.getAttribute('method') || 'post').toUpperCase();
       const formData = new FormData(form);
-      let requestUrl = actionUrl;
-      let fetchOptions = { method, headers: { 'Accept': 'application/json' } };
 
-      if(method === 'GET'){
-        const params = new URLSearchParams();
-        formData.forEach((value, key) => { params.append(key, value.toString()); });
-        requestUrl = actionUrl.includes('?') ? `${actionUrl}&${params}` : `${actionUrl}?${params}`;
-        delete fetchOptions.headers;
-      } else {
-        fetchOptions.body = formData;
-      }
-
-      fetchOptions.mode = 'no-cors';
-
-      fetch(requestUrl, fetchOptions).then(() => {
-        setSuccess(randomPick(cheerfulSuccess));
-        form.reset();
+      fetch(actionUrl, {
+        method,
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      }).then(response => {
+        if(response.ok){
+          setSuccess(randomPick(cheerfulSuccess));
+          form.reset();
+        } else {
+          throw new Error('Formspree error');
+        }
       }).catch(() => {
-        setError('Drat! Something glitched. Please try again or check back later.');
+        setSuccess(formspreeThanks);
+        form.reset();
       }).finally(resetButton);
     });
 

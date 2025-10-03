@@ -453,53 +453,6 @@ button:focus-visible {
   margin-bottom: 0.5rem;
 }
 
-#mc_embed_shell {
-  width: 100%;
-}
-
-#mc_embed_signup {
-  background: transparent;
-  padding: 0;
-}
-
-#mc-embedded-subscribe-form {
-  display: grid;
-  gap: 1rem;
-}
-
-#mc-embedded-subscribe-form .mc-field-group {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.signup-hidden {
-  position: absolute;
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-#mc-embedded-subscribe-form .indicates-required,
-#mc-embedded-subscribe-form .refferal_badge,
-#mc-embedded-subscribe-form .optionalParent,
-#mc-embedded-subscribe-form .foot,
-#mc-embedded-subscribe-form .clear,
-#mc_embed_signup_scroll > h2 {
-  display: none;
-}
-
-#mc_embed_signup_scroll > h2,
-#mc_embed_signup .indicates-required,
-#mc_embed_signup .optionalParent,
-#mc_embed_signup .foot,
-#mc_embed_signup .clear,
-#mc_embed_signup .response,
-#mc_embed_signup .refferal_badge {
-  display: none !important;
-}
-
 
 [data-theme="dark"] {
   color-scheme: dark;
@@ -693,4 +646,13 @@ button:focus-visible {
 [data-contrast="high"] .accessibility-menu__intro,
 [data-contrast="high"] .accessibility-section__title {
   color: #000000;
+}
+
+.signup-hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
