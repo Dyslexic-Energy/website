@@ -78,6 +78,18 @@ a:focus {
   transform: translateY(0);
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .wrap {
   width: min(100% - 2rem, var(--wrap-width));
   margin: 0 auto;
@@ -119,6 +131,9 @@ a:focus {
 }
 
 .accessibility-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   border: 4px solid #0073e6;
   border-radius: 999px;
   padding: 0.55rem 1.1rem;
@@ -147,6 +162,17 @@ a:focus {
 [data-theme="dark"] .accessibility-trigger:hover,
 [data-theme="dark"] .accessibility-trigger:focus-visible {
   box-shadow: 0 0 0 4px rgba(77, 171, 255, 0.3);
+}
+
+.accessibility-trigger__icon {
+  width: 24px;
+  height: 24px;
+  background: url('/assets/a11y-button.svg') center/contain no-repeat;
+  flex: none;
+}
+
+.accessibility-trigger__label {
+  line-height: 1;
 }
 
 .accessibility-menu {
@@ -421,8 +447,9 @@ button:focus-visible {
 
 @media (max-width: 720px) {
   .site-header__inner {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
   }
 
   .hero__title {
@@ -436,6 +463,25 @@ button:focus-visible {
   .legal-links ul {
     flex-direction: column;
     gap: 0.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .accessibility-trigger {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 12px;
+  }
+
+  .accessibility-trigger__icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .accessibility-trigger__label {
+    display: none;
   }
 }
 
