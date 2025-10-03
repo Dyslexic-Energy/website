@@ -14,13 +14,27 @@
 
   const fragment = document.createDocumentFragment();
 
+  const chooseHorizontal = () => {
+    const zone = Math.random() < 0.5 ? 'left' : 'right';
+    const min = zone === 'left' ? 2 : 75;
+    const max = zone === 'left' ? 25 : 98;
+    return randomInRange(min, max);
+  };
+
+  const chooseVertical = () => {
+    const zone = Math.random() < 0.5 ? 'top' : 'bottom';
+    const min = zone === 'top' ? 2 : 80;
+    const max = zone === 'top' ? 20 : 98;
+    return randomInRange(min, max);
+  };
+
   for (let i = 0; i < STAR_COUNT; i += 1) {
     const star = document.createElement('span');
     star.className = 'star-field__star';
 
     const size = randomInRange(MIN_SIZE, MAX_SIZE);
-    const top = randomInRange(5, 95);
-    const left = randomInRange(5, 95);
+    const top = chooseVertical();
+    const left = chooseHorizontal();
 
     star.style.setProperty('--size', `${size.toFixed(1)}px`);
     star.style.setProperty('--top', `${top.toFixed(2)}%`);

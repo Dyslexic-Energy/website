@@ -187,7 +187,7 @@
       delete root.dataset.font;
     }
 
-    if(prefs.textSize && prefs.textSize !== 'base'){
+    if(prefs.textSize){
       root.dataset.textSize = prefs.textSize;
     } else {
       delete root.dataset.textSize;

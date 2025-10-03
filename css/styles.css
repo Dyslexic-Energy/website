@@ -264,14 +264,14 @@ a:focus {
 
 .star-field__star {
   position: absolute;
-  width: var(--size, 40px);
-  height: var(--size, 40px);
+  width: var(--size, 42px);
+  aspect-ratio: 548 / 718;
   top: var(--top, 50%);
   left: var(--left, 50%);
   transform: translate(-50%, -50%);
   background: url('/assets/star-burst.svg') center/contain no-repeat;
-  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.3));
-  opacity: 0.8;
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.38)) drop-shadow(0 0 32px rgba(255, 255, 255, 0.28));
+  opacity: 0.82;
   animation: starfield-twinkle var(--twinkle-duration, 14s) ease-in-out infinite;
   animation-delay: var(--twinkle-delay, 0s);
 }
@@ -531,11 +531,11 @@ button:focus-visible {
 }
 
 [data-text-size="base"] body {
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 
 [data-text-size="big"] body {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 [data-text-size="huge"] body {
