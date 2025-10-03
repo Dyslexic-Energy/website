@@ -1,7 +1,7 @@
 # Clarifying Questions
 
 1. **Email capture endpoint** — What service or API should both sign-up forms submit to (e.g., Mailchimp, custom endpoint, static form provider), and does the existing `Specs/MailChimpScript.js` snippet remain valid?
-Answer: We are using Mailchimp, there is a JS script snip-it in the file MailChimpScript.js that MUST be included on the page. Action URL is https://dyslexicenergy.us18.list-manage.com/subscribe/post?u=f8c2bc087d8a8d19cc91821bd&id=ecdeb3a050&f_id=00b2abe6f0.
+Answer: Forms now post to Formspree (`https://formspree.io/f/movkwbrd`); include honeypot field and friendly success copy.
 
 2. **Privacy link destination** — Which URL should the privacy microcopy reference, and will it live on the dedicated Privacy page that must share the main site template (header + footer)?
 Answer: URL: `/privacy` 
