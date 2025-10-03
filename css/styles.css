@@ -107,18 +107,22 @@ a:focus {
 }
 
 .accessibility-trigger {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(34, 34, 34, 0.2);
   border-radius: 999px;
   padding: 0.6rem 1.2rem;
-  background: #ffffff;
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.85);
+  color: #1c1c1c;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .accessibility-trigger:hover,
 .accessibility-trigger:focus-visible {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 4px rgba(87, 118, 210, 0.25);
+  transform: translateY(-1px);
   outline: none;
 }
 
@@ -214,9 +218,9 @@ a:focus {
 
 .hero__star {
   position: absolute;
-  fill: rgba(255, 255, 255, 0.9);
-  filter: drop-shadow(0 0 24px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 60px rgba(255, 255, 255, 0.55));
-  opacity: 0.88;
+  fill: rgba(255, 255, 255, 0.88);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 48px rgba(255, 255, 255, 0.45));
+  opacity: 0.82;
   animation: twinkle 9s ease-in-out infinite;
 }
 
@@ -225,31 +229,33 @@ a:focus {
 }
 
 .hero__star--center {
-  width: clamp(120px, 28vw, 220px);
-  height: clamp(120px, 28vw, 220px);
+  width: clamp(90px, 22vw, 160px);
+  height: clamp(140px, 32vw, 240px);
   left: 50%;
-  top: 50%;
+  top: 52%;
   transform: translate(-50%, -50%);
   animation-delay: 1.2s;
 }
 
 .hero__star--small {
-  width: clamp(36px, 8vw, 70px);
-  height: clamp(36px, 8vw, 70px);
-  opacity: 0.7;
+  width: clamp(46px, 10vw, 84px);
+  height: clamp(86px, 18vw, 160px);
+  opacity: 0.68;
 }
 
-.hero__star--north { top: 6%; left: 50%; transform: translateX(-50%); animation-delay: 0s; }
-.hero__star--north-east { top: 20%; right: 12%; animation-delay: 2s; }
-.hero__star--south-east { bottom: 18%; right: 16%; animation-delay: 4.5s; }
-.hero__star--south { bottom: 8%; left: 50%; transform: translateX(-50%); animation-delay: 6.5s; }
-.hero__star--south-west { bottom: 20%; left: 16%; animation-delay: 3.2s; }
-.hero__star--north-west { top: 22%; left: 10%; animation-delay: 5.4s; }
+.hero__star--north { top: 4%; left: 50%; transform: translate(-50%, 0); animation-delay: 0s; }
+.hero__star--north-east { top: 16%; right: 8%; animation-delay: 1.8s; }
+.hero__star--east { top: 48%; right: 4%; animation-delay: 3.4s; }
+.hero__star--south-east { bottom: 8%; right: 10%; animation-delay: 4.9s; }
+.hero__star--south { bottom: 4%; left: 50%; transform: translate(-50%, 0); animation-delay: 6.1s; }
+.hero__star--south-west { bottom: 12%; left: 12%; animation-delay: 7.2s; }
+.hero__star--west { top: 52%; left: 6%; animation-delay: 5.6s; }
+.hero__star--north-west { top: 18%; left: 14%; animation-delay: 2.6s; }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.55; transform: scale(0.85) rotate(0deg); }
-  40% { opacity: 1; transform: scale(1.14) rotate(6deg); }
-  60% { opacity: 0.9; transform: scale(1.02) rotate(-4deg); }
+  0%, 100% { opacity: 0.5; transform: scale(0.8) rotate(0deg); }
+  40% { opacity: 1; transform: scale(1.1) rotate(5deg); }
+  60% { opacity: 0.88; transform: scale(0.98) rotate(-4deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {

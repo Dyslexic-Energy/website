@@ -4,6 +4,11 @@
   const root = document.documentElement;
   const PREF_KEY = 'dex_prefs_v1';
 
+  const trigger = document.getElementById('accessibilityButton');
+  const menu = document.getElementById('accessibilityMenu');
+  const prefItems = menu ? Array.from(menu.querySelectorAll('[data-pref]')) : [];
+  const resetButton = menu ? menu.querySelector('[data-reset]') : null;
+
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -18,15 +23,9 @@
   let prefs = loadPreferences();
   applyPreferences();
 
-  const trigger = document.getElementById('accessibilityButton');
-  const menu = document.getElementById('accessibilityMenu');
-
   if(!trigger || !menu){
     return;
   }
-
-  const prefItems = Array.from(menu.querySelectorAll('[data-pref]'));
-  const resetButton = menu.querySelector('[data-reset]');
 
   trigger.addEventListener('click', event => {
     event.stopPropagation();
@@ -204,6 +203,9 @@
   }
 
   function updateControlState(){
+    if(prefItems.length === 0){
+      return;
+    }
     prefItems.forEach(item => {
       const pref = item.dataset.pref;
       const type = item.dataset.itemType;
