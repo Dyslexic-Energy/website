@@ -4,7 +4,7 @@
 - **Purpose (Sec. 1):** Build an accessible holding page that introduces Dyslexic Energy, reinforces rainbow-forward branding, delivers mission and educational content, and includes two sign-up forms plus an accessibility control menu.
 - **Layout (Sec. 2):** Single-page structure with branded header, hero, mission, explainer, and footer. Hero requires gradient, stars, and centralised copy. Both header and footer must host sign-up opportunities.
 - **Branding (Sec. 3):** Hero gradient transitions from maroon through warm/cool hues with grain overlay; typography bold geometric sans, uppercase; four decorative glow stars positioned at hero corners.
-- **Accessibility Menu (Sec. 4):** Dropdown triggered from header top-right, keyboard navigable, with toggles for dark mode, text scaling, dyslexia-friendly font, high contrast, and reduced motion—settings persisted via `localStorage` and seeded from system preferences.
+- **Accessibility Menu (Sec. 4):** Dropdown triggered from header top-right, keyboard navigable, with toggles for dark mode, text scaling, dyslexia-friendly font, high contrast persisted via `localStorage` and seeded from system preferences.
 - **Content (Sec. 5):** Prescribed copy for Stay in Touch forms, Mission, and Dyslexia in Plain English must be used verbatim; forms need validation, ARIA live regions, and privacy copy.
 - **Footer (Sec. 6):** Full-bleed dark background (#0F0F12) with light text, secondary sign-up form, legal links, and copyright.
 - **Accessibility & Compliance (Sec. 7):** WCAG 2.2 AA colour contrast, keyboard operability, semantic structure, zoom resilience, skip link, reduce motion support.

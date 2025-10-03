@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dyslexic Energy — Holding Page</title>
+  <meta name="description" content="Dyslexic Energy celebrates different brains with accessible, inclusive design.">
+  <link rel="canonical" href="https://dyslexicenergy.com">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top" role="banner">
+    <div class="wrap">
+      <div class="brand">
+        <span class="brand__wordmark" aria-label="Dyslexic Energy">Dyslexic Energy</span>
+      </div>
+      <button id="accessibilityButton"
+              class="accessibility-trigger"
+              type="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="accessibilityMenu">
+        Accessibility
+      </button>
+      <div id="accessibilityMenu"
+           class="accessibility-menu"
+           data-dropdown
+           hidden>
+        <p>Accessibility controls will appear here in Step 05.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <h1 id="hero-title">Dyslexic Energy</h1>
+        <p class="hero__subtitle">Celebrating Different Brains.</p>
+        <p class="hero__summary">Accessible holding page scaffolding. Branding, gradients, and decorative stars will be added in Step 03.</p>
+      </div>
+    </section>
+
+    <section id="stay-in-touch" class="stay-in-touch" aria-labelledby="stay-title">
+      <div class="wrap">
+        <h2 id="stay-title">Stay in Touch</h2>
+        <form id="signup-primary" class="signup-form" method="post" action="#" novalidate>
+          <div class="field">
+            <label for="signup-primary-email">Email address</label>
+            <input type="email"
+                   id="signup-primary-email"
+                   name="email"
+                   autocomplete="email"
+                   required
+                   inputmode="email"
+                   placeholder="you@example.com">
+          </div>
+          <button type="submit">Sign Up</button>
+          <p class="form-note">
+            We respect your privacy. Read the full policy on our dedicated Privacy page.
+          </p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="mission" class="mission" aria-labelledby="mission-title">
+      <div class="wrap">
+        <h2 id="mission-title">Our Mission</h2>
+        <p class="mission__tagline">Different Brains Are Amazing!</p>
+        <p>
+          We celebrate dyslexia as a brilliant way of thinking. Part of every profit goes to UK dyslexia charities.
+          We team up with designers and educators to spread a message that’s positive, practical, and proud.
+        </p>
+      </div>
+    </section>
+
+    <section id="plain-english" class="plain-english" aria-labelledby="plain-english-title">
+      <div class="wrap">
+        <h2 id="plain-english-title">Dyslexia in Plain English</h2>
+        <p>
+          Dyslexia affects reading, writing, and memory — but also brings strengths in creativity, problem-solving, and big-picture thinking.
+          Different doesn’t mean less. Different means powerfully different.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <section id="footer-cta" class="footer-cta" aria-labelledby="footer-title">
+        <h2 id="footer-title">Stay in Touch</h2>
+        <form id="signup-footer" class="signup-form" method="post" action="#" novalidate>
+          <div class="field">
+            <label for="signup-footer-email">Email address</label>
+            <input type="email"
+                   id="signup-footer-email"
+                   name="email"
+                   autocomplete="email"
+                   required
+                   inputmode="email"
+                   placeholder="you@example.com">
+          </div>
+          <button type="submit">Sign Up</button>
+          <p class="form-note">
+            Prefer to read details first? Visit our Accessibility and Privacy pages (coming soon).
+          </p>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <nav class="legal-links" aria-label="Legal">
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/accessibility.html">Accessibility Statement</a></li>
+        </ul>
+      </nav>
+
+      <p class="copyright">
+        © <span id="currentYear">2025</span> Dyslexic Energy. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./scripts/year.js" defer></script>
+  <script src="./scripts/accessibility-menu.js" defer></script>
+  <script src="./scripts/forms.js" defer></script>
+</body>
+</html>
