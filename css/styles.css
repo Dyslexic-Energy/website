@@ -260,6 +260,8 @@ a:focus {
   position: absolute;
   inset: 0;
   z-index: 0;
+  perspective: 800px;
+  transform-style: preserve-3d;
 }
 
 .star-field__star {
@@ -268,7 +270,7 @@ a:focus {
   aspect-ratio: 548 / 718;
   top: var(--top, 50%);
   left: var(--left, 50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateZ(var(--depth, 0px));
   background: url('/assets/star-burst.svg') center/contain no-repeat;
   filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.38)) drop-shadow(0 0 32px rgba(255, 255, 255, 0.28));
   opacity: 0.82;
@@ -289,6 +291,18 @@ a:focus {
   animation-name: starfield-twinkle, starfield-float;
   animation-duration: var(--twinkle-duration, 14s), var(--float-duration, 28s);
   animation-delay: var(--twinkle-delay, 0s), var(--float-delay, 0s);
+}
+
+.star-field__star--far {
+  opacity: 0.65;
+}
+
+.star-field__star--mid {
+  opacity: 0.75;
+}
+
+.star-field__star--near {
+  opacity: 0.9;
 }
 
 .star-field--static .star-field__star,
