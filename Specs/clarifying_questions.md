@@ -1,8 +1,7 @@
 # Clarifying Questions
 
 1. **Email capture endpoint** — What service or API should both sign-up forms submit to (e.g., Mailchimp, custom endpoint, static form provider), and does the existing `Specs/MailChimpScript.js` snippet remain valid?
-Answer: We are using Mailchimp, there is a JS script snip-it in the file MailChimpScript.js that MUST be included on the page.
-Follow-up: Mailchimp form action URL/list ID details required to connect both Stay in Touch forms.
+Answer: We are using Mailchimp, there is a JS script snip-it in the file MailChimpScript.js that MUST be included on the page. Action URL is https://dyslexicenergy.us18.list-manage.com/subscribe/post?u=f8c2bc087d8a8d19cc91821bd&id=ecdeb3a050&f_id=00b2abe6f0.
 
 2. **Privacy link destination** — Which URL should the privacy microcopy reference, and will it live on the dedicated Privacy page that must share the main site template (header + footer)?
 Answer: URL: `/privacy` 
@@ -28,8 +27,7 @@ To support this, DyslexicEnergy.com will:
 """
 
 4. **Typography sourcing** — Should we license Helvetica Bold, use an alternative (e.g., Neuzeit Grotesk), or self-host Atkinson Hyperlegible for dyslexia mode?
-Answer: Use Google Fonts; provide (at lease) Atkinson Hyperlegible and "Open Dyslexic".
-Follow-up: Open Dyslexic can be downloaded from https://antijingoist.itch.io/opendyslexic — confirm hosting approach for toggle integration. 
+Answer: Use Google Fonts; provide (at lease) Atkinson Hyperlegible and "Open Dyslexic". Open Dyslexic will be self-hosted from `/fonts/`.
 
 5. **Grain overlay asset** — Does a specific grain texture exist for the hero background, or should we generate one (SVG / PNG) within the repo?
 Answer: Generate one

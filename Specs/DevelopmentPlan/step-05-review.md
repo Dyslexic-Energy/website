@@ -6,6 +6,7 @@
 - [ ] Dark Mode, High Contrast, Text Size, Dyslexia-friendly font, Reduce Motion all function as specified.
 - [ ] No console errors or performance warnings observed.
 - [ ] Accessibility specialist signs off on behaviour.
+- [ ] Hero star styling reviewed against reference image (Specs/Designs/Stars.png).
 
 **Reviewer:**
 **Date:**

@@ -6,4 +6,4 @@
 - [x] Validation approach chosen: native HTML5 with custom enhancements for friendly whimsical messaging.
 - [x] Privacy microcopy & statement links live at `/privacy/`; accessibility page at `/accessibility/`.
 - [x] Tone guidance captured (friendly and whimsical) for success/error states.
-- [ ] Confirm Mailchimp form action URL/list ID before wiring submission.
+- [x] Confirmed Mailchimp form action URL/list ID and embedded in Stay in Touch form.

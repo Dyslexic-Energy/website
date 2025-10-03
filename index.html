@@ -28,8 +28,93 @@
       <div id="accessibilityMenu"
            class="accessibility-menu"
            data-dropdown
+           role="menu"
+           aria-labelledby="accessibilityButton"
            hidden>
-        <p>Accessibility controls will appear here in Step 05.</p>
+        <p class="accessibility-menu__intro">Tune Dyslexic Energy to suit your eyes.</p>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Appearance</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="themeDark"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dark Mode</span>
+            <span class="accessibility-item__hint">dim the background</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="contrastHigh"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">High Contrast</span>
+            <span class="accessibility-item__hint">boost clarity</span>
+          </button>
+        </div>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Text size</p>
+          <div class="accessibility-radio-group" role="group" aria-label="Text size options">
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="base"
+                    role="menuitemradio"
+                    aria-checked="true">
+              Base
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="big"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Big
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="extra"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Extra-Big
+            </button>
+          </div>
+        </div>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Reading comfort</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="fontDyslexic"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dyslexia-friendly font</span>
+            <span class="accessibility-item__hint">Open Dyslexic</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="reduceMotion"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Reduce Motion</span>
+            <span class="accessibility-item__hint">less animation</span>
+          </button>
+        </div>
+
+        <div class="accessibility-menu__footer" role="none">
+          <button type="button" class="accessibility-reset" data-reset>
+            Reset preferences
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -37,29 +122,26 @@
   <main id="main" class="site-main" role="main">
     <section id="hero" class="hero" aria-labelledby="hero-title">
       <div class="hero__stars" aria-hidden="true">
-        <svg class="hero__star hero__star--big hero__star--tl" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        <svg class="hero__star hero__star--center" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 0 L72 32 L100 50 L72 68 L50 100 L28 68 L0 50 L28 32 Z"></path>
         </svg>
-        <svg class="hero__star hero__star--big hero__star--tr" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        <svg class="hero__star hero__star--small hero__star--north" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 8 L62 30 L90 50 L62 70 L50 92 L38 70 L10 50 L38 30 Z"></path>
         </svg>
-        <svg class="hero__star hero__star--big hero__star--bl" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        <svg class="hero__star hero__star--small hero__star--north-east" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 8 L62 30 L90 50 L62 70 L50 92 L38 70 L10 50 L38 30 Z"></path>
         </svg>
-        <svg class="hero__star hero__star--big hero__star--br" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 0 L60 28 L96 10 L74 44 L100 50 L74 56 L96 90 L60 72 L50 100 L40 72 L4 90 L26 56 L0 50 L26 44 L4 10 L40 28 Z"></path>
+        <svg class="hero__star hero__star--small hero__star--south-east" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 8 L62 30 L90 50 L62 70 L50 92 L38 70 L10 50 L38 30 Z"></path>
         </svg>
-        <svg class="hero__star hero__star--small hero__star--tm" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        <svg class="hero__star hero__star--small hero__star--south" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 8 L62 30 L90 50 L62 70 L50 92 L38 70 L10 50 L38 30 Z"></path>
         </svg>
-        <svg class="hero__star hero__star--small hero__star--rm" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        <svg class="hero__star hero__star--small hero__star--south-west" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 8 L62 30 L90 50 L62 70 L50 92 L38 70 L10 50 L38 30 Z"></path>
         </svg>
-        <svg class="hero__star hero__star--small hero__star--bm" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
-        </svg>
-        <svg class="hero__star hero__star--small hero__star--lm" viewBox="0 0 100 100" focusable="false" role="presentation">
-          <path d="M50 6 L58 26 L86 18 L70 40 L94 50 L70 60 L86 82 L58 72 L50 94 L42 72 L14 82 L30 60 L6 50 L30 40 L14 18 L42 26 Z"></path>
+        <svg class="hero__star hero__star--small hero__star--north-west" viewBox="0 0 100 100" focusable="false" role="presentation">
+          <path d="M50 8 L62 30 L90 50 L62 70 L50 92 L38 70 L10 50 L38 30 Z"></path>
         </svg>
       </div>
       <div class="wrap hero__content">
@@ -77,27 +159,52 @@
       </div>
     </section>
 
-    <section id="stay-in-touch" class="stay-in-touch" aria-labelledby="stay-title">
-      <div class="wrap">
-        <h2 id="stay-title">Stay in Touch</h2>
-        <form id="signup-primary" class="signup-form" method="post" action="#" novalidate data-mailchimp="pending">
+    
+<section id="stay-in-touch" class="stay-in-touch" aria-labelledby="stay-title">
+  <div class="wrap">
+    <h2 id="stay-title">Stay in Touch</h2>
+    <div id="mc_embed_shell">
+      <div id="mc_embed_signup">
+        <form action="https://dyslexicenergy.us18.list-manage.com/subscribe/post?u=f8c2bc087d8a8d19cc91821bd&amp;id=ecdeb3a050&amp;f_id=00b2abe6f0"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="signup-form"
+              target="_self"
+              novalidate>
           <div class="field">
-            <label for="signup-primary-email">Email address</label>
+            <label for="mce-EMAIL">Email Address</label>
             <input type="email"
-                   id="signup-primary-email"
-                   name="email"
-                   autocomplete="email"
+                   name="EMAIL"
+                   class="required email"
+                   id="mce-EMAIL"
                    required
+                   autocomplete="email"
                    inputmode="email"
                    placeholder="you@example.com"
                    aria-describedby="signup-primary-status">
           </div>
-          <button type="submit">Sign Up</button>
+
+          <div class="signup-hidden" aria-hidden="true">
+            <label for="honeypot-b_f8c2bc087d8a8d19cc91821bd_ecdeb3a050">Leave this field empty</label>
+            <input type="text"
+                   id="honeypot-b_f8c2bc087d8a8d19cc91821bd_ecdeb3a050"
+                   name="b_f8c2bc087d8a8d19cc91821bd_ecdeb3a050"
+                   tabindex="-1"
+                   value="">
+          </div>
+
+          <button type="submit" name="subscribe">Subscribe</button>
           <p class="form-note">
             We respect your privacy. Read our <a href="/privacy/">Privacy Statement</a> to learn how we handle your email.
           </p>
           <p class="form-status" id="signup-primary-status" role="status" aria-live="polite"></p>
         </form>
+      </div>
+    </div>
+  </div>
+</section>
+
       </div>
     </section>
 

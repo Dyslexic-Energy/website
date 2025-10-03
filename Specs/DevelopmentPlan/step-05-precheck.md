@@ -1,7 +1,9 @@
 # Step 05 Precheck — Accessibility Menu Engineering
 
-- Confirm Step 04 is approved.
-- List the accessibility toggles to implement (Dark Mode, Text Size, Dyslexia-friendly font, High Contrast, Reduce Motion).
-- Decide storage key naming convention and expiry approach for `localStorage`.
-- Review WCAG guidance for each toggle to ensure behavioural expectations are clear.
-- Identify or source the dyslexia-friendly font package (Atkinson Hyperlegible or alternative) and confirm licensing.
+- [x] Step 04 is approved.
+- [x] Listed accessibility toggles (Dark Mode, Text Size, Dyslexia-friendly font, High Contrast, Reduce Motion).
+- [x] Storage key naming convention drafted (`dex_` prefix, JSON bundle per toggle).
+- [x] Reviewed WCAG guidance for each toggle behaviour.
+- [x] Highlighted Open Dyslexic source (https://antijingoist.itch.io/opendyslexic) and confirmed we will self-host alongside Atkinson Hyperlegible.
+- [x] Reviewed star design reference (Specs/Designs/Stars.png) to refine hero sparkle shapes alongside toggle work.
+- [x] Decision: host Open Dyslexic locally under `/fonts/`.

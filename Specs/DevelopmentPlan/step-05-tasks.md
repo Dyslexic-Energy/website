@@ -6,4 +6,5 @@
 4. Wire each control to CSS class or data attribute changes (e.g., `data-contrast="high"`, `data-font="dyslexia"`, etc.).
 5. Persist user preferences in `localStorage` and hydrate on page load, respecting system defaults for colour scheme and reduced motion.
 6. Ensure toggles update live regions or visually confirm when state changes (e.g., `aria-pressed`).
-7. Write or update automated unit/interaction tests if applicable (or document manual test steps in `Specs/DevelopmentPlan/step-05-review.md`).
+7. Refine hero star styling per `Specs/Designs/Stars.png` and confirm motion respects Reduce Motion.
+8. Write or update automated unit/interaction tests if applicable (or document manual test steps in `Specs/DevelopmentPlan/step-05-review.md`).

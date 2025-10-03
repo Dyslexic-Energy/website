@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'Your inbox just got more dyslexia-positive. Thanks for joining!'
   ];
 
-  const mailchimpPendingMessage = 'Thanks for signing up! Final delivery happens once we plug in the Mailchimp list. Sit tight.';
-
   signupForms.forEach(form => {
     const emailField = form.querySelector('input[type="email"]');
     const status = form.querySelector('.form-status');
@@ -52,14 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
       submitButton.disabled = true;
       submitButton.setAttribute('aria-busy', 'true');
 
-      if(isMailchimpPending(form)){
-        window.setTimeout(() => {
-          setSuccess(mailchimpPendingMessage);
-          resetButton();
-        }, 400);
-        return;
-      }
-
       const actionUrl = form.getAttribute('action') || '';
       const method = (form.getAttribute('method') || 'post').toUpperCase();
       const formData = new FormData(form);
@@ -75,13 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchOptions.body = formData;
       }
 
-      fetch(requestUrl, fetchOptions).then(response => {
-        if(response.ok){
-          setSuccess(randomPick(cheerfulSuccess));
-          form.reset();
-        } else {
-          throw new Error('Mailchimp response not ok');
-        }
+      fetchOptions.mode = 'no-cors';
+
+      fetch(requestUrl, fetchOptions).then(() => {
+        setSuccess(randomPick(cheerfulSuccess));
+        form.reset();
       }).catch(() => {
         setError('Drat! Something glitched. Please try again or check back later.');
       }).finally(resetButton);
@@ -138,13 +126,4 @@ function validateEmail(value){
 
 function randomPick(list){
   return list[Math.floor(Math.random() * list.length)];
-}
-
-function isMailchimpPending(form){
-  const pendingAttr = form.getAttribute('data-mailchimp');
-  if(typeof pendingAttr === 'string' && pendingAttr.toLowerCase() === 'pending'){
-    return true;
-  }
-  const action = form.getAttribute('action');
-  return !action || action === '#';
 }

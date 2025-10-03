@@ -28,8 +28,93 @@
       <div id="accessibilityMenu"
            class="accessibility-menu"
            data-dropdown
+           role="menu"
+           aria-labelledby="accessibilityButton"
            hidden>
-        <p>Accessibility controls will appear here in Step 05.</p>
+        <p class="accessibility-menu__intro">Tune Dyslexic Energy to suit your eyes.</p>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Appearance</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="themeDark"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dark Mode</span>
+            <span class="accessibility-item__hint">dim the background</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="contrastHigh"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">High Contrast</span>
+            <span class="accessibility-item__hint">boost clarity</span>
+          </button>
+        </div>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Text size</p>
+          <div class="accessibility-radio-group" role="group" aria-label="Text size options">
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="base"
+                    role="menuitemradio"
+                    aria-checked="true">
+              Base
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="big"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Big
+            </button>
+            <button type="button"
+                    class="accessibility-item accessibility-item--pill"
+                    data-item-type="radio"
+                    data-pref="textSize"
+                    data-value="extra"
+                    role="menuitemradio"
+                    aria-checked="false">
+              Extra-Big
+            </button>
+          </div>
+        </div>
+
+        <div class="accessibility-section" role="none">
+          <p class="accessibility-section__title">Reading comfort</p>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="fontDyslexic"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Dyslexia-friendly font</span>
+            <span class="accessibility-item__hint">Open Dyslexic</span>
+          </button>
+          <button type="button"
+                  class="accessibility-item"
+                  data-item-type="toggle"
+                  data-pref="reduceMotion"
+                  role="menuitemcheckbox"
+                  aria-checked="false">
+            <span class="accessibility-item__label">Reduce Motion</span>
+            <span class="accessibility-item__hint">less animation</span>
+          </button>
+        </div>
+
+        <div class="accessibility-menu__footer" role="none">
+          <button type="button" class="accessibility-reset" data-reset>
+            Reset preferences
+          </button>
+        </div>
       </div>
     </div>
   </header>
